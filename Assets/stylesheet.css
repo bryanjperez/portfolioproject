@@ -154,13 +154,13 @@ header nav ul li a:hover {
 }
 .contactInfo {
   font-size: 24px;
-  margin: 0px 60px 0px 250px;
-  width: 10%;
+  margin: 0px 0px 0px 500px;
+  width: 60%;
   display: flex;
   flex: 2 70%;
   flex-wrap: flex;
-  align-items: over;
   justify-content: space-between;
   float: center;
   padding-bottom: 80px;
+  top: 50%;
 }
