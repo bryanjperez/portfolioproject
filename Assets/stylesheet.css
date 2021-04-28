@@ -97,7 +97,7 @@ header nav ul li a:hover {
   display: flex;
   flex-wrap: flex;
   justify-content: space-between;
-  margin: 200px 50px 50px 300px;
+  margin: 150px 50px 50px 300px;
 }
 .profile-photo {
   border-radius: 50%;
@@ -147,7 +147,7 @@ header nav ul li a:hover {
   padding-top: 50px;
   padding-bottom: 30px;
 }
-.largeWork {
+.myWork {
   /* font-size: 24px; */
   margin: auto;
   width: 40%;
@@ -156,13 +156,43 @@ header nav ul li a:hover {
   flex-wrap: wrap;
   /* align-items: center; */
   justify-content: space-between;
-  float: right;
+  float: center;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-image:hover {
-  color: yellow;
+.largeWork:hover {
+  /* background-color: #c37500; */
+  opacity: 0.7;
+  box-shadow: 0 0 0px #000000;
+  transform: scale(1.05);
 }
+.smallWork {
+  padding-top: 50px;
+  margin-left: 100px;
+}
+.smallWork1:hover {
+  opacity: 0.7;
+  box-shadow: 0 0 0px #000000;
+  transform: scale(1.05);
+}
+.smallWork2:hover {
+  opacity: 0.7;
+  box-shadow: 0 0 0px #000000;
+  transform: scale(1.05);
+}
+.smallWork3:hover {
+  opacity: 0.7;
+  box-shadow: 0 0 0px #000000;
+  transform: scale(1.05);
+}
+.smallWork4:hover {
+  opacity: 0.7;
+  box-shadow: 0 0 0px #000000;
+  transform: scale(1.05);
+}
+/* .smallWork:hover { */
+/* background: yellow; */
+
 .contact-information {
   flex: 2 70%;
   display: flex;
