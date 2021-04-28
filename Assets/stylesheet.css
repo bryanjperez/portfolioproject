@@ -136,28 +136,34 @@ header nav ul li a:hover {
 .largeWork {
   /* font-size: 24px; */
   margin: auto;
-  width: 50%;
+  width: 40%;
   display: flex;
-  /* flex: 2 70%; */
-  flex-wrap: flex;
-  align-items: center;
+  flex: 2 70%;
+  flex-wrap: wrap;
+  /* align-items: center; */
   justify-content: space-between;
-  float: center;
-  padding-top: 0px;
+  float: right;
+  padding-top: 50px;
   padding-bottom: 50px;
+}
+image:hover {
+  color: yellow;
 }
 .contact-information {
   flex: 2 70%;
   display: flex;
   flex-wrap: flex;
   font-size: 24px;
-  margin: 0px 120px 0px 0px;
+  margin: 50px 120px 0px 0px;
   width: 60%;
   /* align-items: center; */
   justify-content: space-between;
   /* float: center; */
   padding-top: 50px;
   padding-bottom: 30px;
+}
+.banner {
+  background-image: contain;
 }
 .flex-row {
   display: flex;
