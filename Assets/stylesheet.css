@@ -6,6 +6,7 @@
 
 body {
   font-family: Helvetica, Arial, sans-serif;
+  background-color: whitesmoke;
 }
 
 header {
@@ -118,7 +119,7 @@ header nav ul li a:hover {
   flex-wrap: flex;
   font-size: 24px;
   margin: auto;
-  width: 80%;
+  width: 50%;
   /* align-items: center; */
   justify-content: space-between;
   /* float: center; */
@@ -127,7 +128,7 @@ header nav ul li a:hover {
 }
 .largeWork {
   margin: 0px 0px 0px 150px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   /* width: 80%; */
   display: flex;
   flex-wrap: wrap;
@@ -146,6 +147,7 @@ header nav ul li a:hover {
 }
 .psaPic {
   height: 70%;
+  margin-right: 10px;
 }
 
 .perez-sports h2 {
@@ -163,11 +165,15 @@ header nav ul li a:hover {
 }
 .smallWork {
   width: 60%;
-  margin: 0px 0px 0px 150px;
+  margin: 0px 0px 0px 500px;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   /* justify-content: space-around; */
+}
+.smallWork1,
+.smallWork3 {
+  padding-right: 10px;
 }
 
 .smallWork1:hover {
@@ -210,7 +216,10 @@ header nav ul li a:hover {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-evenly; */
+  margin: 0px 0px 0px 30px;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .flex-row {
   display: flex;
