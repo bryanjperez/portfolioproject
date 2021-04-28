@@ -73,19 +73,11 @@ header nav ul li a:hover {
   background-image: url(../Assets/images/backgroundimage2.png);
   height: 350px;
   width: 100%;
-  /* background-position: center; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* flex-wrap: wrap; */
-  /* background-position: 80%; */
-  /* text-align: right; */
   background-image: linear-gradient(to right, white, #003366);
   display: flex;
   flex-wrap: flex;
-  /* margin: auto; */
 }
 .heroImage h2 {
-  /* margin: 200px 50px 300px 700px; */
   text-shadow: 0px 40px 0px rgba(0, 0, 0, 0.1),
     0px 14px 10px rgba(0, 0, 0, 0.15), 0px 40px 2px rgba(0, 0, 0, 0.1),
     0px 34px 30px rgba(0, 0, 0, 0.1);
@@ -93,7 +85,6 @@ header nav ul li a:hover {
   font-size: 64px;
   -webkit-text-stroke: 1px #282828;
   text-shadow: 0px 4px 4px #282828;
-  /* flex: 2 70%; */
   display: flex;
   flex-wrap: flex;
   justify-content: space-between;
@@ -106,26 +97,13 @@ header nav ul li a:hover {
   flex-wrap: flex;
   margin: 50px 0px 50px 50px;
 }
-.about-me-sidebar {
-  font-size: 36px;
-  margin: 40px 20px 20px 100px;
-  padding-bottom: 10px;
-  width: 15%;
-  /* display: flex; */
-  /* align-items: left; */
-  /* justify-content: space-between; */
-  color: #ff6600;
-  -webkit-text-stroke: 1px #282828;
-  text-shadow: 0px 4px 4px #282828;
-  border-right: 5px solid #ff6600;
-  border-right: 5px solid #ff6600;
-}
+.about-me-sidebar,
 .main-sidebar {
   font-size: 36px;
-  margin: 40px 20px 20px 100px;
+  margin: 40px 20px 20px 70px;
   padding-bottom: 10px;
   width: 15%;
-  /* display: flex; */
+  display: flex;
   /* align-items: left; */
   /* justify-content: space-between; */
   color: #ff6600;
@@ -147,29 +125,51 @@ header nav ul li a:hover {
   padding-top: 50px;
   padding-bottom: 30px;
 }
-.myWork {
-  /* font-size: 24px; */
-  margin: auto;
-  width: 40%;
+.largeWork {
+  margin: 0px 0px 0px 150px;
+  padding-bottom: 50px;
+  /* width: 80%; */
   display: flex;
-  flex: 2 70%;
   flex-wrap: wrap;
   /* align-items: center; */
-  justify-content: space-between;
-  float: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  /* justify-content: space-between; */
+  /* font-size: 24px; */
+  /* margin: auto; */
+  /* width: 40%; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* float: center; */
+  /* padding-top: 50px; */
+  /* padding-bottom: 50px; */
+}
+.psaPic {
+  height: 70%;
+}
+
+.perez-sports h2 {
+  font-size: 36px;
+  color: #ff6600;
+  -webkit-text-stroke: 1px #282828;
+  text-shadow: 0px 4px 4px #282828;
+  background-color: linear-gradient(to right, white, #003366);
+  margin: 0px 0px 0px 150px;
 }
 .largeWork:hover {
-  /* background-color: #c37500; */
   opacity: 0.7;
   box-shadow: 0 0 0px #000000;
   transform: scale(1.05);
 }
 .smallWork {
-  padding-top: 50px;
-  margin-left: 100px;
+  width: 60%;
+  margin: 0px 0px 0px 150px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  /* justify-content: space-around; */
 }
+
 .smallWork1:hover {
   opacity: 0.7;
   box-shadow: 0 0 0px #000000;
@@ -190,8 +190,6 @@ header nav ul li a:hover {
   box-shadow: 0 0 0px #000000;
   transform: scale(1.05);
 }
-/* .smallWork:hover { */
-/* background: yellow; */
 
 .contact-information {
   flex: 2 70%;
@@ -209,6 +207,84 @@ header nav ul li a:hover {
 .banner {
   background-image: contain;
 }
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+}
 .flex-row {
   display: flex;
+}
+
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  .section-title {
+    width: 80%;
+  }
+  .trainer {
+    flex: 0 70%;
+  }
+  .contact-info iframe {
+    flex: 1 100%;
+  }
+}
+/* media query for tablets and smaller */
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .bio-text {
+    flex: 100%;
+  }
+}
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .hero-form button {
+    width: 100%;
+  }
+  .section-title {
+    width: 95%;
+  }
+  .intro p {
+    width: 100%;
+  }
+  .trainer {
+    flex: 0 100%;
+  }
+  .contact-info {
+    text-align: center;
+  }
 }
