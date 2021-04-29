@@ -6,7 +6,7 @@
 
 body {
   font-family: Helvetica, Arial, sans-serif;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 header {
@@ -112,13 +112,14 @@ header nav ul li a:hover {
   text-shadow: 0px 4px 4px #282828;
   border-right: 5px solid #ff6600;
   border-right: 5px solid #ff6600;
+  /* background-image: linear-gradient(to top, white, whitesmoke); */
 }
 .bio-text {
   flex: 2 70%;
   display: flex;
   flex-wrap: flex;
   font-size: 24px;
-  margin: auto;
+  margin-right: 220px;
   width: 50%;
   /* align-items: center; */
   justify-content: space-between;
@@ -132,31 +133,15 @@ header nav ul li a:hover {
   /* width: 80%; */
   display: flex;
   flex-wrap: wrap;
-  /* align-items: center; */
-  /* justify-content: space-between; */
-  /* font-size: 24px; */
-  /* margin: auto; */
-  /* width: 40%; */
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* align-items: center; */
-  /* justify-content: space-between; */
-  /* float: center; */
-  /* padding-top: 50px; */
-  /* padding-bottom: 50px; */
-}
-.psaPic {
-  height: 70%;
-  margin-right: 10px;
 }
 
-.perez-sports h2 {
-  font-size: 36px;
+.perez-sports {
+  font-size: 58px;
   color: #ff6600;
   -webkit-text-stroke: 1px #282828;
   text-shadow: 0px 4px 4px #282828;
   background-color: linear-gradient(to right, white, #003366);
-  margin: 0px 0px 0px 150px;
+  margin: auto;
 }
 .largeWork:hover {
   opacity: 0.7;
@@ -165,7 +150,7 @@ header nav ul li a:hover {
 }
 .smallWork {
   width: 60%;
-  margin: 0px 0px 0px 500px;
+  margin: 0px 0px 0px 800px;
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 100px;
@@ -174,6 +159,13 @@ header nav ul li a:hover {
 .smallWork1,
 .smallWork3 {
   padding-right: 10px;
+}
+.smallWork3,
+.smallWork4 {
+  padding-top: 20px;
+}
+.smallHed {
+  margin-left: 150px;
 }
 
 .smallWork1:hover {
@@ -196,13 +188,15 @@ header nav ul li a:hover {
   box-shadow: 0 0 0px #000000;
   transform: scale(1.05);
 }
-
 .contact-information {
   flex: 2 70%;
   display: flex;
   flex-wrap: flex;
-  font-size: 24px;
-  margin: 50px 120px 0px 0px;
+  font-size: 30px;
+  color: #ff6600;
+  -webkit-text-stroke: 1px #282828;
+  /* text-shadow: 0px 4px 4px #282828; */
+  margin: 50px 220px 0px 0px;
   width: 60%;
   /* align-items: center; */
   justify-content: space-between;
@@ -224,6 +218,68 @@ header nav ul li a:hover {
 .flex-row {
   display: flex;
 }
+@media screen and (max-width: 1025px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  header nav ul li a {
+    font-size: 40px;
+  }
+
+  .heroImage h2 {
+    margin-top: 100px;
+    width: 100%;
+    margin-left: 80px;
+  }
+  .about-me-sidebar,
+  .main-sidebar {
+    font-size: 36px;
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    border-right: none;
+  }
+
+  .bio-text {
+    /* text-align: center; */
+    width: 100%;
+    font-size: 30px;
+    margin-left: 100px;
+  }
+  .flex-container {
+    flex: 10 70%;
+    flex-direction: column;
+    margin-left: 300px;
+  }
+  .flex-row {
+    text-align: center;
+    width: 100%;
+  }
+  .psaPic {
+    width: 130%;
+    margin-left: 40px;
+    margin-right: 90px;
+  }
+  .perez-sports {
+    font-size: 42px;
+    text-align: center;
+    margin-left: 100px;
+  }
+  .contact-information {
+    font-size: 18px;
+  }
+}
 
 @media screen and (max-width: 980px) {
   header {
@@ -243,57 +299,176 @@ header nav ul li a:hover {
   header nav ul li a {
     font-size: 20px;
   }
-  .section-title {
-    width: 80%;
+
+  .heroImage h2 {
+    margin-top: 100px;
+    width: 100%;
+    margin-left: 80px;
   }
-  .trainer {
-    flex: 0 70%;
+  .about-me-sidebar,
+  .main-sidebar {
+    font-size: 24px;
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    border-right: none;
   }
-  .contact-info iframe {
-    flex: 1 100%;
+
+  .bio-text {
+    text-align: center;
+    width: 100%;
+  }
+  .flex-container {
+    flex: 10 70%;
+    flex-direction: column;
+    margin-left: 250px;
+  }
+  .flex-row {
+    text-align: center;
+    width: 100%;
+  }
+  .psaPic {
+    width: 90%;
+    margin-left: 40px;
+  }
+  .perez-sports {
+    font-size: 42px;
+    text-align: center;
+    margin-left: 100px;
+  }
+  .contact-information {
+    align-content: center;
+    text-align: center;
+    font-size: 18px;
   }
 }
 /* media query for tablets and smaller */
 
 @media screen and (max-width: 768px) {
-  section {
-    padding: 30px 15px;
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
   }
-  .step h3 {
-    flex: 1 100%;
+  header h1 {
+    width: 100%;
     text-align: center;
+  }
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
     justify-content: center;
   }
-  .step-info {
-    flex: 2 100%;
-    text-align: center;
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  .heroImage h2 {
+    margin-top: 60px;
+    width: 100%;
+    margin-left: 100px;
+  }
+  .about-me-sidebar,
+  .main-sidebar {
+    padding-bottom: 0;
     justify-content: center;
+    position: relative;
+    border-right: none;
   }
-  .step-img {
-    flex: 0 32%;
-    margin-right: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
+
   .bio-text {
-    flex: 100%;
+    text-align: center;
+    width: 100%;
+    margin-right: 90px;
+  }
+
+  .flex-container {
+    flex: 5 10%;
+    flex-direction: column;
+    margin-left: 200px;
+  }
+  .flex-row {
+    text-align: center;
+    width: 100%;
+  }
+  .psaPic {
+    width: 120%;
+  }
+  .perez-sports {
+    font-size: 42px;
+    text-align: center;
+  }
+  .contact-information {
+    flex-wrap: wrap;
+    text-align: center;
   }
 }
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-  .hero-form button {
+  header {
     width: 100%;
   }
-  .section-title {
-    width: 95%;
-  }
-  .intro p {
+  header h1 {
     width: 100%;
-  }
-  .trainer {
-    flex: 0 100%;
-  }
-  .contact-info {
     text-align: center;
+    margin-left: 100px;
+  }
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  .profile-photo {
+    width: 125px;
+    height: 125px;
+  }
+  .heroImage {
+    height: 50%;
+  }
+
+  .heroImage h2 {
+    margin-top: 70px;
+    font-size: 36px;
+    margin-left: 100px;
+    /* margin-right: 100px; */
+    /* width: 100%; */
+  }
+  .about-me-sidebar,
+  .main-sidebar {
+    font-size: 22px;
+    padding-bottom: 0;
+    border-right: none;
+  }
+  .bio-text {
+    text-align: center;
+    width: 100%;
+    margin-right: 45px;
+  }
+  .flex-container {
+    flex: 5 10%;
+    flex-direction: column;
+    margin-left: 150px;
+  }
+  .flex-row {
+    text-align: center;
+    width: 100%;
+  }
+  .psaPic {
+    width: 125%;
+    margin-right: 125px;
+  }
+  .perez-sports {
+    font-size: 30px;
+    text-align: center;
+    margin-right: 120px;
+  }
+  .contact-information {
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 5px;
   }
 }
