@@ -105,16 +105,17 @@ header nav ul li a:hover {
 /* *****SIDEBAR***** */
 .about-me-sidebar,
 .main-sidebar {
-  font-size: 36px;
+  font-size: 50px;
   margin: 40px 20px 20px 70px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   width: 15%;
   display: flex;
   color: #ff6600;
   -webkit-text-stroke: 1px #282828;
   text-shadow: 0px 4px 4px #282828;
   border-right: 5px solid #ff6600;
-  border-right: 5px solid #ff6600;
+  /* background-color: green; */
+  /* vertical-align: middle; */
 }
 /* ABOUT ME CONTENT */
 .bio-text {
@@ -132,8 +133,8 @@ header nav ul li a:hover {
 
 /* ****LARGE PEREZ SPORTS IMAGE***** */
 .largeWork {
-  margin: 0px 0px 0px 150px;
-  padding-bottom: 20px;
+  margin: 0px 0px 0px 20px;
+  padding-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -226,6 +227,7 @@ header nav ul li a:hover {
 }
 .flex-row {
   display: flex;
+  flex-wrap: wrap;
 }
 /* MEDIA QUERIES BEGIN */
 @media screen and (max-width: 1025px) {
@@ -476,5 +478,11 @@ header nav ul li a:hover {
     margin-left: 50px;
     margin-top: 5px;
   }
+}
+h3 {
+  font-size: 36px;
+  color: #ff6600;
+  -webkit-text-stroke: 1px #282828;
+  text-shadow: 0px 4px 4px #282828;
 }
 /* END OF CSS STYLESHEET */
