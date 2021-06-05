@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bryan Perez's Portfolio | Web Design</title>
+    <title>Bryan Perez | Web Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./Assets/stylesheet.css" />
 </head>
 <body>
     <!-- BEGIN HEADER -->
     <header id="home">
         <h1>
-        <a href="#home">Bryan Perez's Portfolio</a>
+        <a href="#home">Bryan Perez</a>
         </h1>
     <!-- NAVIGATION MENU -->
         <nav>
@@ -49,40 +51,58 @@
 <!-- BEGIN MAIN - ABOUT ME -SIDEBAR then BIO TEXT -->
 <section id="about-me" class="flex-row">
     <aside id="about-me-sidebar" class="main-sidebar"> 
-        <h2>About Me</h2>
+        About Me
     </aside>
-    <article id="bio-text" class="bio-text">
-        <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum recusandae fugiat facere, nostrum culpa nisi dignissimos quam. Aut, blanditiis hic. Voluptatibus a maiores, accusantium in deleniti est? Obcaecati, magnam expedita.  Lorem100 ipsum, dolor sit amet consectetur adipisicing elit. Rerum consequatur, impedit nihil quibusdam asperiores animi in recusandae officia natus perferendis vero, eum non facilis ipsam molestiae explicabo sint adipisci? Illum dolorum necessitatibus esse itaque distinctio repellendus ex, laborum cupiditate iure ullam excepturi vitae aliquid nobis officiis unde aut enim maiores?
-        </p>
-    </article>
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="col-8 bio-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum recusandae fugiat facere, nostrum culpa nisi dignissimos
+                        quam. Aut, blanditiis hic. Voluptatibus a maiores, accusantium in deleniti est? Obcaecati, magnam expedita. Lorem100
+                        ipsum, dolor sit amet consectetur adipisicing elit. Rerum consequatur, impedit nihil quibusdam asperiores animi in
+                        recusandae officia natus perferendis vero, eum non facilis ipsam molestiae explicabo sint adipisci? Illum dolorum
+                        necessitatibus esse itaque distinctio repellendus ex, laborum cupiditate iure ullam excepturi vitae aliquid nobis
+                        officiis unde aut enim maiores?
+
+            </div>
+        </div>
+    </div>
+    
 </section>
 </main>
 <!-- *********END MAIN - ABOUT ME*********** -->
 
 <!-- BEGIN MAIN - WORK - SIDEBAR THEN PORTFOLIO ITEMS -->
-<section id="work">
+<section id="work" class="flex-row">
     <aside id="work-sidebar" class="main-sidebar">
-        <h2>Work</h2>
-    <div id="my-work" class="flex-container">
+        Work
+    </aside>
+    
+    <!-- <div id="my-work" class="flex-container"> -->
     <!-- LARGE PORTFOLIO ITEM -- PEREZ SPORTS -->
-        <div class="largeWork">
-            <a href="https://https://bryanjperez.github.io/Perez-Sports-Associates/" class="psaPic">
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="col-8 largeWork">
+            <a href="https://bryanjperez.github.io/Perez-Sports-Associates/" class="psaPic">
                 <img src="./Assets/images/perez-banner.jpeg" alt="" class="psaPic">
             </a>
-            <h2 class="perez-sports">Perez Sports Associates</h2>
+            <!-- <center><h2 class="perez-sports">Perez Sports Associates</h2></center> -->
+            </div>
         </div>
+
     <!-- SMALLER PORTFOLIO ITEMS -->
-        <div class="flex-container">
-            <div class="Sample-1">
-                <a href="https://github.com/bryanjperez">
-                <img class="smallWork1" src="./Assets/images/portfolioImage1.png" alt="">
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="col-3 Sample-1">
+                <a href="https://bryanjperez.github.io/group6random/">
+                <img class="smallWork1" src="./Assets/images/portfolioImage3.png" alt="">
                 </a>
                 <div class="smallHed">
-                <h3>Sample 1</h3>
+                <h3>Ambience</h3>
                 </div>
                 </div>
-            <div class="Run-Buddy-Title">
+                <div class="col-1"></div>
+            <!-- <div class="row justify-content-start"> -->
+            <div class="col-3 Run-Buddy-Title">
                 <a href="https://bryanjperez.github.io/run-buddy/">
                 <img class="smallWork2" src="./Assets/images/runBuddy.png" alt="">
                 </a>
@@ -90,7 +110,9 @@
                 <h3>Run Buddy</h3>
                 </div>
             </div>
-            <div class="Sample-3">
+            </div>
+            <div class="row justify-content-start">
+            <div class="col-3 Sample-3">
                 <a href="https://github.com/bryanjperez">
                 <img class="smallWork3"src="./Assets/images/profileImage2.png" alt="">
                 </a>
@@ -98,7 +120,8 @@
                 <h3>Sample 3</h3>
                 </div>
             </div>
-            <div class="Sample 4">
+            <div class="col-1"></div>
+            <div class="col-3 Sample 4">
                 <a href="https://github.com/bryanjperez">
                 <img class="smallWork4" src="./Assets/images/portfolioImage3.png" alt="">
                 </a>
@@ -106,16 +129,16 @@
                 <h3>Sample 4</h3>
                 </div>
             </div>
+            </div>
         </div>
     </div>
-    </aside>
 </section>
 <!-- **********END OF MAIN - WORK********* -->
 
 <!-- MAIN - CONTACT ME SECTION -->
 <section id="contact" class="flex-row">
     <aside id="contact-info" class="main-sidebar">
-        <h2>Contact Me</h2>
+        Contact Me
     </aside>
     <article class="contact-information">
         <div>
